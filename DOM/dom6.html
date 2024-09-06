@@ -1,0 +1,76 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul id="d1">
+            <li>
+                <ul >
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            var students = [
+                                {
+                                name:'jaya',
+                                gender:'female',
+                                place:'gachibowli',
+                                },
+                                {
+                                name:'dasu',
+                                gender:'male',
+                                place:'kphb'
+                                },
+                                {
+                                name:'swati',
+                                gender:'female',
+                                place:'pune'
+                                },
+                                {
+                                name:'pallavi',
+                                gender:'female',
+                                place:'assam'
+                                },
+                                {
+                                name:'kiran',
+                                gender:'male',
+                                place:'kondapur'
+                                },
+                                {
+                                name:'thirumala',
+                                gender:'male',
+                                place:'madhapur'
+                                },
+                                {
+                                name:'priya',
+                                gender:'female',
+                                place:'hitech'
+                                },
+                            ]
+                            var k="name";
+                            var x="gender";
+                            var y="place";
+                            for(var i=0;i<=students.length-1;i++){
+                                var nli=document.createElement("li");
+                                var ul=document.createElement("ul")
+                                var kli=document.createElement("li");
+                                var mli=document.createElement("li");
+                                nli.innerHTML=students[i][k];
+                                kli.innerHTML=students[i][x];
+                                mli.innerHTML=students[i][y];
+                             document.getElementById("d1").appendChild(nli);
+                              ul.appendChild(kli)
+                              ul.appendChild(mli)
+                              nli.appendChild(ul)
+                              document.getElementById("d1").appendChild(nli)
+                              if(students[i][x]=="female"){
+                                nli.style.backgroundColor="pink"
+                              }
+                              else{
+                                nli.style.backgroundColor="green";
+                              }
+                            }
+        </script>
+    </body>
+</html>

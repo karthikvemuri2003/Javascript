@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul>
+            <li class="a">apple</li>
+            <li class="a">mango</li>
+            <li class="a">orange</li>
+        </ul>
+        <script>
+            var x=document.querySelectorAll(".a");
+            var ar=[];
+           
+            x.forEach(function(x){
+               ar.push(x.innerHTML)               
+            })
+            console.log(ar);
+        </script>
+    </body>
+</html>
